@@ -39,6 +39,7 @@
   <script>
     var vConsole = new VConsole()
     console.log("Hello World!")
+    console.log(liff.getOS())
   </script>
 
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
@@ -126,6 +127,7 @@
     
     function getEnvironment() {
       document.getElementById("os").append(liff.getOS())
+      console.log(liff.getOS())
       document.getElementById("language").append(liff.getLanguage())
       document.getElementById("version").append(liff.getVersion())
       document.getElementById("accessToken").append(liff.getAccessToken())
@@ -152,7 +154,7 @@
           liff.login()
         }
       })
-      await liff.init({ liffId: "YOUR-LIFF-ID" })
+      await liff.init({ liffId: "2002624288-QkgWM7yy" })
     }
     main()
   </script>
